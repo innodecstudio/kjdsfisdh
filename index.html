@@ -72,12 +72,8 @@
         ]
       }
     </script>
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.19/dist/lenis.css">
 
-    <!-- Webflow & Locomotive Scroll CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
-    />
 
     <!-- Custom Stylesheet -->
     <link href="style.css" rel="stylesheet" type="text/css" />
@@ -95,70 +91,24 @@
   </script> -->
 
     <!-- Favicon -->
-    <link
-      href="headlogotitle.png"
-      rel="shortcut icon"
-      type="image/x-icon"
-    />
-    <link
-      href="headlogotitle.png"
-      rel="apple-touch-icon"
-    />
+    <link href="headlogotitle.png" rel="shortcut icon" type="image/x-icon" />
+    <link href="headlogotitle.png" rel="apple-touch-icon" />
   </head>
 
   <body>
     <div id="cookie-banner" style="display: block">
-      <div
-        style="
-          position: fixed;
-          bottom: 0;
-          left: 0;
-          width: 100%;
-          background: #000000c6;
-          color: #fff;
-          padding: 13px;
-          z-index: 9999;
-          text-align: center;
-        "
-      >
-        <p style="margin: 0; font-family: Arial, sans-serif; font-size: 16px">
+      <div class="cookie-bg">
+        <p>
           We use cookies to improve your experience on our website.
           <a
             href="https://www.iubenda.com/privacy-policy/42274238"
             target="_blank"
-            style="color: #4caf50; text-decoration: underline"
             >Learn more</a
           >
         </p>
-        <button
-          id="accept-cookies"
-          style="
-            background: #4caf50;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            margin-top: 10px;
-            cursor: pointer;
-            font-family: Arial, sans-serif;
-            font-size: 14px;
-            border-radius: 20px;
-          "
-        >
-          Accept
-        </button>
+        <button id="accept-cookies">Accept</button>
       </div>
     </div>
-    <!-- <div class="cookie-content">
-        <p>
-          We use cookies to ensure you get the best experience. 
-          <a href="/privacy-policy" target="_blank" style="text-decoration: underline; font-weight: 500;">Learn more</a>.
-        </p>
-        <div class="cookie-buttons">
-          <button id="accept-cookies">Accept</button>
-          <button id="decline-cookies">Decline</button>
-        </div>
-      </div>
-    </div>  -->
 
     <div class="container">
       <div class="cursor-wrap">
@@ -224,53 +174,38 @@
                   <div class="navbar-in-menu-wrap">
                     <div class="navbar-main-menu-wrap">
                       <div class="navbar-main-menu">
-                        <a
-                          href="index.html#about"
-                          id="w-node-ff83d1f9-436d-36e2-336c-d945f373e122-f373e111"
-                          data-w-id="ff83d1f9-436d-36e2-336c-d945f373e122"
-                          class="navbar-item w-inline-block"
-                          ><div class="navbar-item-text-wrap">
+                        <a href="#about" class="navbar-item w-inline-block">
+                          <div class="navbar-item-text-wrap">
                             <div class="navbar-item-text default">ABOUT</div>
                             <div class="navbar-item-text hidden">ABOUT</div>
-                          </div></a
-                        ><a
-                          href="index.html#service"
-                          id="w-node-ff83d1f9-436d-36e2-336c-d945f373e128-f373e111"
-                          data-w-id="ff83d1f9-436d-36e2-336c-d945f373e128"
-                          class="navbar-item w-inline-block"
-                          ><div class="navbar-item-text-wrap">
+                          </div>
+                        </a>
+                        <a href="#service" class="navbar-item w-inline-block">
+                          <div class="navbar-item-text-wrap">
                             <div class="navbar-item-text default">SERVICE</div>
                             <div class="navbar-item-text hidden">SERVICE</div>
-                          </div></a
-                        ><a
-                          href="index.html#works"
-                          id="w-node-ff83d1f9-436d-36e2-336c-d945f373e12e-f373e111"
-                          data-w-id="ff83d1f9-436d-36e2-336c-d945f373e12e"
-                          class="navbar-item w-inline-block"
-                          ><div class="navbar-item-text-wrap">
+                          </div>
+                        </a>
+                        <a href="#works" class="navbar-item w-inline-block">
+                          <div class="navbar-item-text-wrap">
                             <div class="navbar-item-text default">WORK</div>
                             <div class="navbar-item-text hidden">WORK</div>
-                          </div></a
-                        ><a
-                          href="index.html#review"
-                          id="w-node-ff83d1f9-436d-36e2-336c-d945f373e134-f373e111"
-                          data-w-id="ff83d1f9-436d-36e2-336c-d945f373e134"
-                          class="navbar-item w-inline-block"
-                          ><div class="navbar-item-text-wrap">
+                          </div>
+                        </a>
+                        <a href="#review" class="navbar-item w-inline-block">
+                          <div class="navbar-item-text-wrap">
                             <div class="navbar-item-text default">REVIEW</div>
                             <div class="navbar-item-text hidden">REVIEW</div>
-                          </div></a
-                        ><a
-                          href="index.html#contact"
-                          id="w-node-ff83d1f9-436d-36e2-336c-d945f373e13a-f373e111"
-                          data-w-id="ff83d1f9-436d-36e2-336c-d945f373e13a"
-                          class="navbar-item w-inline-block"
-                          ><div class="navbar-item-text-wrap">
+                          </div>
+                        </a>
+                        <a href="#contact" class="navbar-item w-inline-block">
+                          <div class="navbar-item-text-wrap">
                             <div class="navbar-item-text default">CONTACT</div>
                             <div class="navbar-item-text hidden">CONTACT</div>
-                          </div></a
-                        >
+                          </div>
+                        </a>
                       </div>
+                      
                       <div class="navbar-menu-info">
                         <div class="navbar-in-menu-info">
                           <div class="navbar-info-wrap">
@@ -291,7 +226,7 @@
                             <a
                               id="w-node-ff83d1f9-436d-36e2-336c-d945f373e14e-f373e111"
                               data-w-id="ff83d1f9-436d-36e2-336c-d945f373e14e"
-                              href="https://www.facebook.com/"
+                              href="comingsoon.html"
                               class="social-text-wrap w-inline-block"
                               ><div class="social-text">Facebook</div></a
                             ><a
@@ -324,7 +259,7 @@
             <div class="hero-wrap">
               <div class="hero-left">
                 <div class="hero-title">
-                  <div class="hero-top-title-wrap"><h1>We Make</h1></div>
+                  <div class="hero-top-title-wrap"><h1>WelcomeTo</h1></div>
                   <div class="hero-bot-title-wrap">
                     <div
                       data-w-id="126fa422-6134-23d5-d4fe-5e388f3a1cbf"
@@ -337,31 +272,36 @@
                       class="typing-outer-wrap"
                     >
                       <div class="typing-wrap _1">
-                        <h1 class="typing-letter _1">W</h1>
-                        <h1 class="typing-letter _2">e</h1>
-                        <h1 class="typing-letter _3">b</h1>
-                        <h1 class="typing-letter _4">s</h1>
-                        <h1 class="typing-letter _5">i</h1>
-                        <h1 class="typing-letter _6">t</h1>
-                        <h1 class="typing-letter _7">e</h1>
+                        <h1 class="typing-letter _1">I</h1>
+                        <h1 class="typing-letter _2">n</h1>
+                        <h1 class="typing-letter _3">n</h1>
+                        <h1 class="typing-letter _4">o</h1>
+                        <h1 class="typing-letter _5">D</h1>
+                        <h1 class="typing-letter _6">e</h1>
+                        <h1 class="typing-letter _7">v</h1>
                       </div>
                       <div style="display: none" class="typing-wrap _2">
-                        <h1 class="typing-letter _8">G</h1>
-                        <h1 class="typing-letter _9">r</h1>
-                        <h1 class="typing-letter _10">a</h1>
-                        <h1 class="typing-letter _11">p</h1>
-                        <h1 class="typing-letter _12">h</h1>
-                        <h1 class="typing-letter _13">i</h1>
-                        <h1 class="typing-letter _14">c</h1>
+                        <h1 class="typing-letter _8">S</h1>
+                        <h1 class="typing-letter _9">t</h1>
+                        <h1 class="typing-letter _10">u</h1>
+                        <h1 class="typing-letter _11">d</h1>
+                        <h1 class="typing-letter _12">i</h1>
+                        <h1 class="typing-letter _13">o</h1>
+                        <h1 class="typing-letter _14">s</h1>
                       </div>
                       <div style="display: none" class="typing-wrap _3">
-                        <h1 class="typing-letter _15">I</h1>
-                        <h1 class="typing-letter _16">n</h1>
-                        <h1 class="typing-letter _17">s</h1>
-                        <h1 class="typing-letter _18">i</h1>
-                        <h1 class="typing-letter _19">g</h1>
-                        <h1 class="typing-letter _20">h</h1>
-                        <h1 class="typing-letter _21">t</h1>
+                        <h1 class="typing-letter _15">A</h1>
+                        <h1 class="typing-letter _16">g</h1>
+                        <h1 class="typing-letter _17">e</h1>
+                        <h1 class="typing-letter _18">n</h1>
+                        <h1 class="typing-letter _19">c</h1>
+                        <h1 class="typing-letter _20">y</h1>
+                        <p
+                          style="font-family: 'Apple Color Emoji', sans-serif"
+                          class="typing-letter _21"
+                        >
+                          &#x1F600;
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -416,8 +356,8 @@
               <div class="hero-right">
                 <div class="hero-right-inner-wrap">
                   <div class="text-medium">
-                    That truly resonate with your audience by merging innovative
-                    design, seamless functionality, and strategic storytelling.
+                    InnoDev Studio is a professional web development and design
+                    agency offering creative solutions for your business.
                   </div>
                   <!-- <a
                     data-w-id="9719c3d8-5f80-d472-0572-d070c633a551"
@@ -1154,9 +1094,9 @@
                   <div class="work-info">
                     <a
                       data-w-id="09a57654-c702-b70f-6768-a9f04c44a7a6"
-                      href="index.html#"
+                      href="https://parasmottan.github.io/Two-Goods-Clone-Responsive-Site/"
                       class="work-title-link w-inline-block"
-                      ><h5>Bond&#x27;s</h5></a
+                      ><h5>TwoGood&#x27;s</h5></a
                     >
                     <div class="tag-wrap">
                       <div class="tag">
@@ -1446,7 +1386,7 @@
                 <div class="social-wrap footer">
                   <a
                     data-w-id="9a89fe89-f295-0a5e-896f-46f84de48ba2"
-                    href="https://about.meta.com/"
+                    href="comingsoon.html"
                     target="_blank"
                     class="social-link-block w-inline-block"
                     ><img
@@ -1457,7 +1397,7 @@
                       class="social-button" /></a
                   ><a
                     data-w-id="9a89fe89-f295-0a5e-896f-46f84de48ba4"
-                    href="https://www.tumblr.com/"
+                    href="comingsoon.html"
                     target="_blank"
                     class="social-link-block w-inline-block"
                     ><img
@@ -1468,7 +1408,7 @@
                       class="social-button" /></a
                   ><a
                     data-w-id="9a89fe89-f295-0a5e-896f-46f84de48ba6"
-                    href="https://dribbble.com/"
+                    href="comingsoon.html"
                     target="_blank"
                     class="social-link-block w-inline-block"
                     ><img
@@ -1482,13 +1422,13 @@
                 <div class="copyright-wrap">
                   <p class="footer-copyright">
                     <a
-                      href=""
+                      href="index.html"
                       data-w-id="9a89fe89-f295-0a5e-896f-46f84de48baa"
                       class="studio-link"
                       >InnoDev </a
                     >| ©2025 All Rights Reserved
                     <a
-                      href="https://webflow.com/"
+                      href="index.html"
                       data-w-id="9a89fe89-f295-0a5e-896f-46f84de48bad"
                       class="webflow-link"
                       >Studios</a
@@ -1520,7 +1460,7 @@
       </section>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.19/dist/lenis.min.js"></script> 
     <script src="script.js"></script>
     <script
       src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=6757b229693a838976ef5389"
